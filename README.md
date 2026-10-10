@@ -1,4 +1,4 @@
-# ptree
+# vtree
 
 A tiny, dependency-free command-line tool that prints a visual tree of your current directory.
 
@@ -20,8 +20,8 @@ A tiny, dependency-free command-line tool that prints a visual tree of your curr
 ## Install
 
 ```bash
-chmod +x ptree
-sudo mv ptree /usr/local/bin/
+chmod +x vtree
+sudo mv vtree /usr/local/bin/
 ```
 
 Requires bash 3.2+ (macOS and Linux).
@@ -29,7 +29,7 @@ Requires bash 3.2+ (macOS and Linux).
 ## Usage
 
 ```
-ptree [options] [directory]
+vtree [options] [directory]
 ```
 
 | Option         | Description                                   |
@@ -43,12 +43,12 @@ ptree [options] [directory]
 | `-h` / `-v`    | Help / version                                |
 
 ```bash
-ptree -L 2                        # two levels deep
-ptree -a -I '.git|node_modules'   # dotfiles, minus the noise
-ptree -d ~/projects               # folders only
+vtree -L 2                        # two levels deep
+vtree -a -I '.git|node_modules'   # dotfiles, minus the noise
+vtree -d ~/projects               # folders only
 ```
 
-Run it with `./ptree` or `bash ptree`, not `sh ptree`.
+Run it with `./vtree` or `bash vtree`, not `sh vtree`.
 
 ## License
 
